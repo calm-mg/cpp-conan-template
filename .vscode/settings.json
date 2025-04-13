@@ -1,0 +1,26 @@
+{
+  "cmake.buildDirectoryVariant": "default",
+  "remote.WSL.promptToMoveFiles": false,
+  "cmake.generator": "Unix Makefiles",
+  "cmake.sourceDirectory": "${workspaceFolder}",
+  "cmake.buildDirectory": "${workspaceFolder}/build",
+  "cmake.buildArgs": [],
+  "cmake.configureArgs": [],
+  "cmake.configureOnOpen": true,
+  "cmake.buildOnSave": false,
+  "cmake.installPrefix": "${workspaceFolder}/install",
+  "C_Cpp.default.includePath": [
+    "${workspaceFolder}/include"
+  ],
+  "C_Cpp.default.compilerPath": "/usr/bin/g++",
+  "clangd.path": "/usr/bin/clangd-15",
+  "C_Cpp.intelliSenseEngine": "disabled", // 기본 확장 비활성화
+  "clangd.arguments": [
+  "--clang-tidy"
+  ],
+  "[cpp]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+    "editor.formatOnSave": true
+  },
+  "clang-format.style": "file" // .clang-format 파일을 사용하게 설정
+}

@@ -1,0 +1,19 @@
+Checks: >
+  clang-analyzer-*,         # 버그 잡는 정적 분석기
+  bugprone-*,               # 잠재적 버그/안티패턴
+  modernize-*,              # C++ 스타일 현대화 (auto, nullptr 등)
+  performance-*,            # 성능 관련 조언
+  readability-*,            # 가독성 개선
+  cppcoreguidelines-*,
+  google-*,                 # 구글 C++ 스타일 일부
+  -clang-analyzer-cplusplus.NewDeleteLeaks # false positive 방지용 예외
+
+WarningsAsErrors: ''
+
+CheckOptions:
+  - key:             modernize-use-nullptr.NullMacros
+    value:           'NULL'
+  - key:             readability-identifier-naming.VariableCase
+    value:           camelCase
+  - key:             cppcoreguidelines-pro-type-member-init.HonorCXX11Defaulted
+    value:           '1'

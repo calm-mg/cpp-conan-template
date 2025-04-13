@@ -1,0 +1,8 @@
+BasedOnStyle: Google
+IndentWidth: 4
+AccessModifierOffset: -4
+IndentAccessModifiers: false
+AlwaysBreakAfterAccessSpecifier: true
+BraceWrapping:
+  AfterClass: true
+  AfterFunction: true
